@@ -45,7 +45,6 @@ public class DomesticCat extends Cat implements Grafted, Pedigreed {
     if (lastGraftDate == null) {
       return true;
     }
-
     return System.currentTimeMillis() - lastGraftDate.getTime() > GRAFT_EXPIRATION_TIME;
   }
 }
