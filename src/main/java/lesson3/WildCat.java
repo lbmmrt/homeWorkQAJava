@@ -3,7 +3,7 @@ package lesson3;
 import java.util.LinkedList;
 import java.util.List;
 
-public class WildCat extends Cat {
+public class WildCat extends Cat<Tree> {
 
   private final List<String> favoriteFood = new LinkedList<>();
   private boolean isHunting;
