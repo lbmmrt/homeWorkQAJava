@@ -9,6 +9,7 @@ public class Main {
     List<Student> students = new ArrayList<>();
 
     students.add(new Student(2, "Ivan", "A", Map.of("Math", 3, "Fisics", 2, "Rus", 5)));
+    students.add(new Student(2, "Alex", "A", Map.of("Math", 2, "Fisics", 2, "Rus", 2)));
     students.add(new Student(2, "Petr", "A", Map.of("Math", 2, "Fisics", 2, "Rus", 5)));
     students.add(new Student(1, "Masha", "A", Map.of("Math", 3, "Fisics", 4, "Rus", 4)));
 
