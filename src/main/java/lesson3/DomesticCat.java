@@ -4,7 +4,9 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
+
 public class DomesticCat extends Cat implements Grafted, Pedigreed {
+
 
   private final List<String> favoriteFood = new LinkedList<>();
   private String breed;
@@ -47,4 +49,10 @@ public class DomesticCat extends Cat implements Grafted, Pedigreed {
     }
     return System.currentTimeMillis() - lastGraftDate.getTime() > GRAFT_EXPIRATION_TIME;
   }
+
+  @Override
+  public List<Object> getToys() {
+    return toys;
+  }
+
 }

@@ -2,7 +2,9 @@ package lesson3;
 
 import java.util.List;
 
+
 public abstract class Cat {
+
 
   protected Gender gender;
 

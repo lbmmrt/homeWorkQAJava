@@ -5,6 +5,7 @@ import java.util.List;
 
 public class WildCat extends Cat {
 
+
   private final List<String> favoriteFood = new LinkedList<>();
   private boolean isHunting;
 
