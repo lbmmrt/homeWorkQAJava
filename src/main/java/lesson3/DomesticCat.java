@@ -4,13 +4,13 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-public class DomesticCat extends Cat<Sofa> implements Grafted, Pedigreed, ToyPlayer<Object> {
+
+public class DomesticCat extends Cat implements Grafted, Pedigreed {
+
 
   private final List<String> favoriteFood = new LinkedList<>();
   private String breed;
   private Date lastGraftDate;
-
-  private final List<Object> toys = new LinkedList<>();
 
   private DomesticCat() {
     favoriteFood.add("Kiteket");
@@ -51,12 +51,8 @@ public class DomesticCat extends Cat<Sofa> implements Grafted, Pedigreed, ToyPla
   }
 
   @Override
-  public void addToy(Object toy) {
-    toys.add(toy);
-  }
-
-  @Override
   public List<Object> getToys() {
     return toys;
   }
+
 }
